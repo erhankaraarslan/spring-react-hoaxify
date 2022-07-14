@@ -41,8 +41,8 @@ jobs:
     - name: SFTP Deploy
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        username: ${{secret.USERNAME}}
-        server: ${{secret.IP}}
-        ssh_private_key: ${{secret.SSH}}
+        username: ${{secrets.USERNAME}}
+        server: ${{secrets.IP}}
+        ssh_private_key: ${{secrets.SSH}}
         local_path: ws/target/ws-0.0.1-SNAPSHOT.jar
         remote_path: home/ubuntu
