@@ -20,8 +20,6 @@ jobs:
         node-version: 12.x
     - run: npm cache clean --force
       working-directory: ./frontend
-    - run: npm run clean
-      working-directory: ./frontend
     - run: rm -rf node_modules
       working-directory: ./frontend
     - run: npm install
