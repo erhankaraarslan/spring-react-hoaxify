@@ -19,6 +19,8 @@ jobs:
       with:
         node-version: 12.x
     - run: npm cache clean --force
+    - run: npm run clean
+    - run: rm -rf node_modules
     - run: npm install
     - name: Setup Java JDK
       uses: actions/setup-java@v1.4.3
