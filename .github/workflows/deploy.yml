@@ -40,7 +40,7 @@ jobs:
         cp -a frontend/build/. ws/src/main/resources/static/
         
     - name: build spring 
-      run: mvn -B package --file pom.xml
+      run: mvn -X -B package --file pom.xml
       working-directory: ./ws
     
     - name: SFTP Deploy
